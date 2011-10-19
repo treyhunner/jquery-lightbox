@@ -52,7 +52,7 @@
 			window.console = {};
 			window.console.log = window.console.debug = window.console.warn = window.console.trace = function(){};
 			window.console.error = function(){
-				var msg = "An error has occured. More information will be available in the console log.";
+				var msg = "An error has occurred. More information will be available in the console log.";
 				for ( var i = 0; i < arguments.length; ++i ) {
 					if ( typeof arguments[i] !== 'string' ) { break; }
 					msg += "\n"+arguments[i];
@@ -819,7 +819,7 @@
 		
 		rel:			'lightbox',	// What to look for in the rels
 		
-		auto_relify:	true,		// should we automaticly do the rels?
+		auto_relify:	true,		// should we automatically do the rels?
 		
 		auto_scroll:	'follow',	// should the lightbox scroll with the page? follow, disabled, ignore
 		auto_resize:	true,		// true or false
@@ -833,8 +833,8 @@
 		
 		show_helper_text:	true,	// Display the helper text up the top right
 		show_linkback:		true,	// true, false
-		show_info:			'auto',	// auto - automaticly handle, true - force
-		show_extended_info:	'auto',	// auto - automaticly handle, true - force	
+		show_info:			'auto',	// auto - automatically handle, true - force
+		show_extended_info:	'auto',	// auto - automatically handle, true - force	
 		
 		// names of the options that can be modified
 		options:	['show_helper_text', 'auto_scroll', 'auto_resize', 'download_link', 'show_info', 'show_extended_info', 'ie6_support', 'colorBlend', 'baseurl', 'files', 'text', 'show_linkback', 'keys', 'opacity', 'padding', 'speed', 'rel', 'auto_relify'],
@@ -980,7 +980,7 @@
 					var image = images.prepare(obj);
 					
 					if ( !image ) {
-						window.console.error('We dont know what we have:', obj, image);
+						window.console.error("We don't know what we have:", obj, image);
 					} else {
 						images.push(image);
 					}
@@ -1144,13 +1144,13 @@
 			// -------------------
 			// Apply events
 			
-			// If the window resizes, act appropriatly
+			// If the window resizes, act appropriately
 			$(window).unbind('resize').resize(function ()
 			{	// The window has been resized
 				$.Lightbox.resizeBoxes('resized');
 			});
 			
-			// If the window scrolls, act appropriatly
+			// If the window scrolls, act appropriately
 			if ( this.scroll === 'follow' )
 			{	// We want to
 				$(window).scroll(function ()
@@ -1298,7 +1298,7 @@
 			// Fix attention seekers
 			$('embed, object, select').css('visibility', 'hidden');//.hide(); - don't use this, give it a go, find out why!
 			
-			// Resize the boxes appropriatly
+			// Resize the boxes appropriately
 			this.resizeBoxes('general');
 			
 			// Reposition the Boxes
@@ -1385,7 +1385,7 @@
 			var image = this.images.current();
 			if ( !image || !image.width || !this.visible )
 			{	// No image or no visible lightbox, so we don't care
-				//window.console.warn('A resize occured while no image or no lightbox...');
+				//window.console.warn('A resize occurred while no image or no lightbox...');
 				return false;
 			}
 			

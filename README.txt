@@ -121,7 +121,7 @@ Options:
 	  string               - A string of the manual baseurl to use
 			
 	Name: files
-	Description: The javascript object that contains the locations of the requred files, used if you have renamed files.
+	Description: The javascript object that contains the locations of the required files, used if you have renamed files.
 	Children: js.lightbox, js.colorBlend, css.lightbox, images.prev, images.next, images.blank, images.loading
 	
 	Name: text
@@ -148,7 +148,7 @@ Options:
 	Description: What to look for in the rel tag of links and images to detect if it should have a lightbox
 	Values:
 	  "lightbox" (default) - Look for rel="lightbox" by default
-	  string               - What to lookfor
+	  string               - What to look for
 	
 	Name: auto_relify
 	Description: Should we do an initial rel scan to automatically detect lightboxes?
